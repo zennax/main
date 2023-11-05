@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+            <script src="main.js"></script>
+            <script src="audio.js"></script>
+            <script src="scrolling-txt.js"></script>
+            <link rel="stylesheet" href="scrolling-txt.css">
+        <link rel="stylesheet" href="main.css">
+    <title>Featured</title>
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <a href="index.html" onlcick="console.log('Navigating to Home')">Home</a>
+                <a href="search.html" onlcick="console.log('Navigating to Search')">Search</a>
+                    <a href="featured.html" onlcick="console.log('Navigating to Featured')">Featured</a>
+                <a href="downloads.html" onlcick="console.log('Navigating to Download')">Download</a>
+            <a href="about.html" onlcick="console.log('Navigating to About')">About</a>
+        </nav>
+        <div class="rolling-text-container">
+            <p class="rolling-text">This site is only to be used responsibly, any misuse may have consquences. We are <u>NOT</u> liable for your actions.</p>
+        </div>
+    </div>
+        <h1 style="text-align: center;">Featured</h1>
+        <select style="margin: 5px; padding: 10px; max-width: 30%; min-width: 10%;" id="audioSelect" data-ddg-inputtype="unknown">
+            <option id="tunes" value="">Juice Wlrd (Singles)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Demise.mp3">Demise</option>
+            <option value="https://xkxng.github.io/quake.github.io/Juice WRLD - Rugrats (Kicks) (NEW CDQ Leak).mp3">Rugrats</option>
+            <option value="https://xkxng.github.io/quake.github.io/Naruto.mp3">Naruto</option>
+            <option value="https://xkxng.github.io/quake.github.io/OverSprung.mp3">Oversprung</option>
+            <option value="https://xkxng.github.io/quake.github.io/Priceless.mp3">Priceless</option>
+            <option value="https://xkxng.github.io/quake.github.io/Shoot Em Down.mp3">Shoot Em Down</option>
+            <option value="https://xkxng.github.io/quake.github.io/Something to Prove.mp3">Something to Prove</option>
+            <option value="https://xkxng.github.io/quake.github.io/Swear.mp3">Swear</option>
+            <option value="https://xkxng.github.io/quake.github.io/White Mask.mp3">White Mask</option>
+            <option value="https://xkxng.github.io/quake.github.io/You.mp3">You</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/4 Instance.mp3">4 Instance</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Crystal.mp3">Crystal</option>
+            <option value="https://xkxng.github.io/quake.github.io/You.mp3">You</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/4 Instance.mp3">4 Instance</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Crystal.mp3">Crystal</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - Afterlife (New Leak).mp3">Juice WRLD - Afterlife (New Leak)</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - Ball [UNRELEASED].mp3">Juice WRLD - Ball [UNRELEASED]</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - Californication (Unreleased).mp3">Juice WRLD - Californication (Unreleased)</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - Cupids Carcass (Unreleased) (New Leak).mp3">Juice WRLD - Cupids Carcass (Unreleased) (New Leak)</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - Flavor (Official CDQ) (Unreleased).mp3">Juice WRLD - Flavor (Official CDQ) (Unreleased)</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - GTA (Unreleased).mp3">Juice WRLD - GTA (Unreleased)</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - Left 4 Dead [UNRELEASED].mp3">Juice WRLD - Left 4 Dead [UNRELEASED]</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - Nightmare (Unreleased).mp3">Juice WRLD - Nightmare (Unreleased)</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - No Fears leak.mp3">Juice WRLD - No Fears leak</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - Rain Dance (Official Lyric Video) [UNRELEASED].mp3">Juice WRLD - Rain Dance (Official Lyric Video) [UNRELEASED]</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - Reason (CDQ).mp3">Juice WRLD - Reason (CDQ)</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - Rotate [UNRELEASED].mp3">Juice WRLD - Rotate [UNRELEASED]</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - So Low (Unreleased).mp3">Juice WRLD - So Low (Unreleased)</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - So What [UNRELEASED].mp3">Juice WRLD - So What [UNRELEASED]</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice WRLD - Spanglish (Unreleased).mp3">Juice WRLD - Spanglish (Unreleased)</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Juice Wrld - AP Tik Tok ( 2019 My Year ) (Unreleased).mp3">Juice Wrld - AP Tik Tok ( 2019 My Year ) (Unreleased)</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Never Switch.mp3">Never Switch</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/TB3.mp3">TB3</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/Uh Huh.mp3">Uh Huh</option>
+            <option value="https://xkxng.github.io/quake.github.io/999/jwftt.mp3">FTT</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/24 Hours (Secure The Bag).mp3">24 Hours (Secure The Bag)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/6 Kiss (v1) [with YNW Melly &amp; Trippie Redd].mp3">6 Kiss (v1) [with YNW Melly &amp; Trippie Redd]</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/6.mp3">6</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/90210.mp3">90210</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/999.mp3">999</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Addicted.mp3">Addicted</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/All Girls Are The Same - Remix (ft. Lil Yachty).mp3">All Girls Are The Same - Remix (ft. Lil Yachty)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/All Of Me.mp3">All Of Me</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/All Smoke.mp3">All Smoke</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Alright.mp3">Alright</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Analog.mp3">Analog</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Another Way.mp3">Another Way</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Any Other Way.mp3">Any Other Way</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Army Armory.mp3">Army Armory</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Back In Chicago.mp3">Back In Chicago</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Bad Boy (v4) [feat. Young Thug].mp3">Bad Boy (v4) [feat. Young Thug]</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Bandit (v1) [Molly Savage].mp3">Bandit (v1) [Molly Savage]</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Bank Account.mp3">Bank Account</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Barbarian.mp3">Barbarian</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Been Myself (6 Kiss Demo).mp3">Been Myself (6 Kiss Demo)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Been Through This (feat. Miley Cyrus).mp3">Been Through This (feat. Miley Cyrus)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Best Around.mp3">Best Around</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Best Believe.mp3">Best Believe</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Big Swag (v2).mp3">Big Swag (v2)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Big Swag.mp3">Big Swag</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Blastoff (with Trippie Redd) [v1].mp3">Blastoff (with Trippie Redd) [v1]</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Blue Shit.mp3">Blue Shit</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Bonnie &amp; Clyde.mp3">Bonnie &amp; Clyde</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Boondocks.mp3">Boondocks</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Boss Of Me.mp3">Boss Of Me</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Buck 50 (v1).mp3">Buck 50 (v1)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Bullet For My Valentine.mp3">Bullet For My Valentine</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Can't Help It.mp3">Can't Help It</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Can't Let Go.mp3">Can't Let Go</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Carry It.mp3">Carry It</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Chimp.mp3">Chimp</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Chrome.mp3">Chrome</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Cigarettes.mp3">Cigarettes</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Classroom.mp3">Classroom</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Codeine Guzzler.mp3">Codeine Guzzler</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Complications.mp3">Complications</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Confide.mp3">Confide</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Confused (feat. Lil Yachty).mp3">Confused (feat. Lil Yachty)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Coraline.mp3">Coraline</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/DJ Khaled.mp3">DJ Khaled</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Day 1.mp3">Day 1</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Death Penalty.mp3">Death Penalty</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Devil Horns.mp3">Devil Horns</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Die To Live.mp3">Die To Live</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Different Phases.mp3">Different Phases</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Do It.mp3">Do It</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Don't Care (2017).mp3">Don't Care (2017)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Don't Go.mp3">Don't Go</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Don't Know What I'm On.mp3">Don't Know What I'm On</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Don’t Got Time.mp3">Don’t Got Time</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Drivin' So Fast.mp3">Drivin' So Fast</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Evil Twins (with Ski Mask the Slump God).mp3">Evil Twins (with Ski Mask the Slump God)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Faded.mp3">Faded</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Fast Forward.mp3">Fast Forward</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Fire In My Lungs.mp3">Fire In My Lungs</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Flavor.mp3">Flavor</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Flintstones.mp3">Flintstones</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Floor It.mp3">Floor It</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Foo Foo (feat. G Herbo).mp3">Foo Foo (feat. G Herbo)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/For The Team (feat. Lil Yachty).mp3">For The Team (feat. Lil Yachty)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Forever Love.mp3">Forever Love</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Friends Die (Fuck About Your Feelings).mp3">Friends Die (Fuck About Your Feelings)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/GTA.mp3">GTA</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Gave Her All Of Me.mp3">Gave Her All Of Me</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Glowed Up (v2).mp3">Glowed Up (v2)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Go Go Go (with The Kid Laroi).mp3">Go Go Go (with The Kid Laroi)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Go Home.mp3">Go Home</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Grateful (v2).mp3">Grateful (v2)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Heavy.mp3">Heavy</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Hell (feat. Mthang).mp3">Hell (feat. Mthang)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Hennessy.mp3">Hennessy</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Hit A Lick.mp3">Hit A Lick</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/I Do This.mp3">I Do This</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/I Don't Need It.mp3">I Don't Need It</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Iceberg Avalanche (Freestyle).mp3">Iceberg Avalanche (Freestyle)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/In A Minute (v2) [feat. Takeoff &amp; Lil Skies].mp3">In A Minute (v2) [feat. Takeoff &amp; Lil Skies]</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/In My Bag.mp3">In My Bag</option>
+            <option value="https://xkxng.github.io/quake.github.io/Leaks/Infatuated.mp3">Infatuated</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/5 AM.mp3">5 AM</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/6.mp3">6</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/8 minute freestyle.mp3">8 minute freestyle</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/All Girls Are The Same [Apple Music Exclusive].mp3">All Girls Are The Same [Apple Music Exclusive]</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/All Of Me.mp3">All Of Me</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/All Talk.mp3">All Talk</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/All The Same.mp3">All The Same</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Another Way.mp3">Another Way</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Anxiety.mp3">Anxiety</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Any Other Way.mp3">Any Other Way</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Astray.mp3">Astray</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Bag.mp3">Bag</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Ball.mp3">Ball</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Bandit (OG).mp3">Bandit (OG)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Barbarian.mp3">Barbarian</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Been A While.mp3">Been A While</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Best Around.mp3">Best Around</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Big Swag.mp3">Big Swag</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Birds Eye View.mp3">Birds Eye View</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Bitch youre done.mp3">Bitch youre done</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Blastoff (ft. Juice WRLD)(v4).mp3">Blastoff (ft. Juice WRLD)(v4)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Bottle.mp3">Bottle</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Bullet For My Valentine.mp3">Bullet For My Valentine</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Cake.mp3">Cake</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Cant Survive.mp3">Cant Survive</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Carry it.mp3">Carry it</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Chimp.mp3">Chimp</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Cigarettes.mp3">Cigarettes</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Codeine Guzzler.mp3">Codeine Guzzler</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Come Around.mp3">Come Around</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Complications .mp3">Complications</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Confide.mp3">Confide</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Coraline.mp3">Coraline</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Cruising.mp3">Cruising</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Demon Love.mp3">Demon Love</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Devil Horns.mp3">Devil Horns</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Drugs Are My Friends.mp3">Drugs Are My Friends</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Dumb Slut.mp3">Dumb Slut</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Electric Chair.mp3">Electric Chair</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Empty Acapella.mp3">Empty Acapella</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Fast Forward.mp3">Fast Forward</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Fire In My Lungs.mp3">Fire In My Lungs</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Fireflies.mp3">Fireflies</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/First Time.mp3">First Time</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Flavor.mp3">Flavor</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Fleur De Lis.mp3">Fleur De Lis</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Forever (v2).mp3">Forever (v2)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Freestyle.mp3">Freestyle</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/From The Start.mp3">From The Start</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/GTA.mp3">GTA</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Game.mp3">Game</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Gave Her All Of Me.mp3">Gave Her All Of Me</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Girl With The Blonde Hair.mp3">Girl With The Blonde Hair</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Girlfriend.mp3">Girlfriend</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Give me my fix.mp3">Give me my fix</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Good Days.mp3">Good Days</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Got Nothing On Me.mp3">Got Nothing On Me</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Hate Her Friends.mp3">Hate Her Friends</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Heart of mine.mp3">Heart of mine</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Heavy.mp3">Heavy</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Hell.mp3">Hell</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Hennessy.mp3">Hennessy</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Hi-Tech Talk.mp3">Hi-Tech Talk</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Hit A Lick.mp3">Hit A Lick</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Hunnid.mp3">Hunnid</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/I Wanna.mp3">I Wanna</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/I don't need it.mp3">I don't need it</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/I don’t know.mp3">I don’t know</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/I love it.mp3">I love it</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Im the Shit.mp3">Im the Shit</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/In A Minute.mp3">In A Minute</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/In My Head.mp3">In My Head</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/In The Trap.mp3">In The Trap</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/In This Bitch.mp3">In This Bitch</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/JW - 90210.mp3">JW - 90210</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Jeffery.mp3">Jeffery</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Jordan.mp3">Jordan</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Juicy.mp3">Juicy</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Karate kid.mp3">Karate kid</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Kawasaki.mp3">Kawasaki</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-2/Keep up.mp3">Keep up</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Racks In rough.mp3">Racks In rough</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Ran Off.mp3">Ran Off</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Reach Freestyle.mp3">Reach Freestyle</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Rebel Blood.mp3">Rebel Blood</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Right Now.mp3">Right Now</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Road Runners.mp3">Road Runners</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Robbery.mp3">Robbery</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Rockstar Status.mp3">Rockstar Status</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Rockstar in His Prime.mp3">Rockstar in His Prime</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Rodents rough.mp3">Rodents rough</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Run That Shit.mp3">Run That Shit</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Sad Master 2.mp3">Sad Master 2</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Sad.mp3">Sad</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Safe.mp3">Safe</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Scarface.mp3">Scarface</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Shit Talk.mp3">Shit Talk</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Shoot For Love.mp3">Shoot For Love</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Slasher.mp3">Slasher</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Slenderman.mp3">Slenderman</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Smoke.mp3">Smoke</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Some More.mp3">Some More</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Sour.mp3">Sour</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Stick Talk(lava girl).mp3">Stick Talk(lava girl)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Stick Talk.mp3">Stick Talk</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Talking to Voices.mp3">Talking to Voices</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Taskforce.mp3">Taskforce</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Tell Your Friends.mp3">Tell Your Friends</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Tempted.mp3">Tempted</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/The Race.mp3">The Race</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/This is Me OG.mp3">This is Me OG</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/This is Me-Misery Avenue.mp3">This is Me-Misery Avenue</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Thoughts.mp3">Thoughts</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Tick Tock.mp3">Tick Tock</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Tonight.mp3">Tonight</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Too Far.mp3">Too Far</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Triple 9.mp3">Triple 9</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Underworld.mp3">Underworld</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Used to.mp3">Used to</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Watch Me.mp3">Watch Me</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Wavy.mp3">Wavy</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Way too many.mp3">Way too many</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/We Dont Get Along.mp3">We Dont Get Along</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/What To Think.mp3">What To Think</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Whats Brakkin (ft. Offset).mp3">Whats Brakkin (ft. Offset)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Where I Stay.mp3">Where I Stay</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Woah.mp3">Woah</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Work.mp3">Work</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Wrong Time.mp3">Wrong Time</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/Yeah Yeah.mp3">Yeah Yeah</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/You I.mp3">You I</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased-3/You Wouldnt Understand.mp3">You Wouldnt Understand</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Kickflip.mp3">Kickflip</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Kill Benjamin.mp3">Kill Benjamin</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Lair.mp3">Lair</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Lavish.mp3">Lavish</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Lean Wit Me [Apple Music Exclusive].mp3">Lean Wit Me [Apple Music Exclusive]</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Leave Me Alone.mp3">Leave Me Alone</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Let Go.mp3">Let Go</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Life Chase.mp3">Life Chase</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Lifes A Dungeon.mp3">Lifes A Dungeon</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Living at the Top.mp3">Living at the Top</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/London Interlude.mp3">London Interlude</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Lose You.mp3">Lose You</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Lost Love.mp3">Lost Love</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Love And Leave Them.mp3">Love And Leave Them</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Love No Hoe.mp3">Love No Hoe</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Love You Always.mp3">Love You Always</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Lucid Dreams [Apple Music Exclusive].mp3">Lucid Dreams [Apple Music Exclusive]</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Make It Sell.mp3">Make It Sell</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Masterpiece.mp3">Masterpiece</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Me.mp3">Me</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Midnight.mp3">Midnight</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Money Hunt.mp3">Money Hunt</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Motions.mp3">Motions</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Narcotics.mp3">Narcotics</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Naruto.mp3">Naruto</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Nascar.mp3">Nascar</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Never Ever Good.mp3">Never Ever Good</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/New Girl.mp3">New Girl</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/No More.mp3">No More</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/No Reason.mp3">No Reason</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/No Short Cuts (ft. Juice WRLD).mp3">No Short Cuts (ft. Juice WRLD)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Numb The Pain.mp3">Numb The Pain</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Oceans (ft. Juice WRLD).mp3">Oceans (ft. Juice WRLD)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Oh Dear.mp3">Oh Dear</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Oh My Oh My.mp3">Oh My Oh My</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/On Time.mp3">On Time</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Out my body (ft. G herbo).mp3">Out my body (ft. G herbo)</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Outta Pocket.mp3">Outta Pocket</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Percaholic.mp3">Percaholic</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Percs.mp3">Percs</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Pesos.mp3">Pesos</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Play Your Role.mp3">Play Your Role</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Plug.mp3">Plug</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Porridge.mp3">Porridge</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Primetime.mp3">Primetime</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Purple Substance.mp3">Purple Substance</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Put Me Down.mp3">Put Me Down</option>
+            <option value="https://xkxng.github.io/quake.github.io/Unreleased/Race Beginning.mp3">Race Beginning</option>
+        </select>
+        <audio id="audio-player" controls></audio>
+
+
+
+    <div id="footer" style="font-weight: bold; bottom: 0; background-color: #7979796d; text-align: center; width: 100%; height: auto; color: #3c3c3ca8; padding: 10px 0px">
+        <footer>
+        <br>
+        <ul class="grid">
+            <li class="grid"><a href="index.html" style="color: #2e2e2ea0;">Home</a></li>
+            <li class="grid"><a href="search.html" style="color: #2e2e2ea0;">Search</a></li>
+            <li class="grid"><a href="featured.html" style="color: #2e2e2ea0;">Featured</a></li>
+            <li class="grid"><a href="downloads.html" style="color: #2e2e2ea0;">Download</a></li>
+            <li class="grid"><a href="about.html" style="color: #2e2e2ea0;">About</a></li>
+            <li class="grid"><a href="about.html#privacy-policy" style="color: #2e2e2ea0;">Privacy Policy</a></li>
+            <li class="grid"><a href="about.html#terms-of-service" style="color: #2e2e2ea0;">Terms of Service</a></li>
+            <li class="grid"><a href="about.html#copyright" style="color: #2e2e2ea0;">Copyright Laws</a></li>
+            <li class="grid"><a href="https://github.com" style="color: #2e2e2ea0;">Github</a></li>
+            <li class="grid"><a href="https://openai.com/" style="color: #2e2e2ea0;">GPT3</a></li>
+        </ul>
+        <br>
+        <p style="padding: 10px;">Powered by <a href="https://github.io/" style="color: #000000a0;">Github</a> & Maintained by <a href="https://github.com/kaxxx0/" style="color: #000000a0;">&copyKing</a></p>
+        <br>
+    </footer>
+</div>
+<div style="background-color: #3498db; width: 100%;"><p style="color: #00000000;">☼</p></div>
+</body>
+</html>

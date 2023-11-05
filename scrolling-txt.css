@@ -1,0 +1,21 @@
+.rolling-text-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.rolling-text {
+    display: inline-block;
+    animation: roll 10s linear infinite;
+}
+.rolling-text p {
+    color: #000;
+    font-weight: 600;
+}
+@keyframes roll {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
