@@ -1,3 +1,13 @@
+@media (max-width: 768px) {
+    @keyframes roll {
+        from {
+            transform: translateX(180%);
+        }
+        to {
+            transform: translateX(-180%);
+        }
+    }
+}
 .rolling-text-container {
     width: 100%;
     overflow: hidden;
