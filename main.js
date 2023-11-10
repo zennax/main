@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 data.items.forEach((item) => {
                     const video = document.createElement("div");
-                    video.innerHTML = `<h2>${item.snippet.title}</h2><a href="https://yewtu.be/watch?v=${item.id.videoId}" target="_blank"><img src="${item.snippet.thumbnails.default.url}" data-video-id="${item.id.videoId}"></a>`;
+                    video.innerHTML = `<h2>${item.snippet.title}</h2><a href="https://yewtu.be/watch?v=${item.id.videoId}&listen=1" target="_blank"><img src="${item.snippet.thumbnails.default.url}" data-video-id="${item.id.videoId}"></a>`;
                     resultsContainer.appendChild(video);
                 });
                 nextPageToken = data.nextPageToken;
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 .then((data) => {
                     data.items.forEach((item) => {
                         const video = document.createElement("div");
-                        video.innerHTML = `<h2>${item.snippet.title}</h2><a href="https://yewtu.be/watch?v=${item.id.videoId}" target="_blank"><img src="${item.snippet.thumbnails.default.url}" data-video-id="${item.id.videoId}"></a>`;
+                        video.innerHTML = `<h2>${item.snippet.title}</h2><a href="https://yewtu.be/watch?v=${item.id.videoId}&listen=1" target="_blank"><img src="${item.snippet.thumbnails.default.url}" data-video-id="${item.id.videoId}"></a>`;
                         resultsContainer.appendChild(video);
                     });
                     nextPageToken = data.nextPageToken;

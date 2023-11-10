@@ -19,7 +19,7 @@
 }
 .rolling-text p {
     color: #000;
-    font-weight: 600;
+    font-weight: bold;
 }
 @keyframes roll {
     from {
