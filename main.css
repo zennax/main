@@ -151,9 +151,8 @@ input[type="radio"] {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 10px;
-    max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 .grid ul {
     list-style: none;
