@@ -22,10 +22,6 @@
         transition: transform 0.2s ease-in-out;
         background: #fff;
     }
-    .img-2 {
-        width: 70%;
-        height: auto;
-    }
 }
 @keyframes fadein-slideright {
     0% {
