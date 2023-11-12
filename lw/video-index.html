@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video Search</title>
+</head>
+<body>
+    <h1>YouTube Video Search</h1>
+    <input type="text" id="searchQuery" placeholder="Search YouTube videos">
+    <button onclick="searchVideos()">Search</button>
+
+    <main>
+        <button type="download"><a href="https://github.com/XKXNG/quake.github.io/raw/main/999/4%20Instance.mp3">Download</a></button>
+        <div id="player"></div>
+    </main>
+
+    <h2>Search Results:</h2>
+    <ul id="videoList"></ul>
+
+    <h2>My Playlist:</h2>
+    <ul id="playlist"></ul>
+
+    <script>
+        // Replace 'YOUR_API_KEY' with your actual YouTube Data API key
+        const apiKey = 'AIzaSyAqXNqaQYHtA0h6hXoDqUn8mYN_-Ke7aLw';
+
+        // Function to search for videos
+        function searchVideos() {
+            const query = document.getElementById('searchQuery').value;
+
+            // Fetch YouTube data using the API
+            fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&q=${query}&part=snippet&type=video`)
+                .then(response => response.json())
+                .then(data => displayResults(data.items))
+                .catch(error => console.error('Error:', error));
+        }
+
+        // Function to display search results
+        function displayResults(results) {
+            const videoList = document.getElementById('videoList');
+            videoList.innerHTML = '';
+
+            results.forEach(item => {
+                const videoId = item.id.videoId;
+                const title = item.snippet.title;
+
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                link.textContent = title;
+                link.href = `https://www.youtube.com/watch?v=${videoId}`;
+                listItem.appendChild(link);
+
+                const saveButton = document.createElement('button');
+                saveButton.textContent = 'Save to Playlist';
+                saveButton.addEventListener('click', function () {
+                    saveToPlaylist(`https://www.youtube.com/watch?v=${videoId}`);
+                });
+
+                listItem.appendChild(saveButton);
+                videoList.appendChild(listItem);
+
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    playVideo(videoId);
+                });
+            });
+        }
+
+        // Function to play a video by its video ID
+        function playVideo(videoId) {
+            const player = document.getElementById('player');
+            player.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
+        }
+
+        // Function to save a video to the playlist
+        function saveToPlaylist(videoUrl) {
+            const playlist = getCookie('playlist') || [];
+            playlist.push(videoUrl);
+            setCookie('playlist', JSON.stringify(playlist));
+            showPlaylist();
+            console.log(`Video saved to playlist: ${videoUrl}`);
+        }
+
+        // Function to show the user's playlist
+        function showPlaylist() {
+            const playlist = document.getElementById('playlist');
+
+            // Clear existing playlist
+            playlist.innerHTML = '';
+
+            // Get user's playlist from cookie
+            const savedPlaylist = getCookie('playlist');
+            if (savedPlaylist) {
+                const playlistArray = JSON.parse(savedPlaylist);
+                playlistArray.forEach(videoUrl => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = videoUrl;
+                    playlist.appendChild(listItem);
+
+                    listItem.addEventListener('click', function () {
+                        playVideo(getVideoIdFromUrl(videoUrl));
+                    });
+                });
+            }
+        }
+
+        // Function to extract video ID from YouTube video URL
+        function getVideoIdFromUrl(url) {
+            const match = url.match(/[?&]v=([^?&]+)/);
+            return match ? match[1] : null;
+        }
+
+        // Function to set a cookie
+        function setCookie(name, value) {
+            document.cookie = `${name}=${value}; path=/`;
+        }
+
+        // Function to get a cookie
+        function getCookie(name) {
+            const cookies = document.cookie.split(';');
+            for (const cookie of cookies) {
+                const [cookieName, cookieValue] = cookie.trim().split('=');
+                if (cookieName.trim() === name) {
+                    return cookieValue;
+                }
+            }
+            return null;
+        }
+    </script>
+</body>
+</html>
