@@ -72,12 +72,32 @@ footer {
     flex-direction: column;
     bottom: 0;
 }
+img:hover {
+    cursor: pointer;
+}
+a:visited {
+    color: #ffffff;
+}
+a {
+    color: #ffffff;
+}
+.juicewrld {
+    cursor: pointer;
+}
+.grid a {
+    color: #cacaca;
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 10px;
     margin: 0 auto;
     padding: 10px;
+}
+.grid p {
+    color: #ececec;
+    font-weight: bold;
+    font-size: 12px;
 }
 .grid ul {
     list-style: none;
