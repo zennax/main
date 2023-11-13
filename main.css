@@ -88,6 +88,16 @@ footer {
     display: flex;
     flex-direction: column;
     bottom: 0;
+    background-color: #777777b5;
+    margin: -10px;
+    width: 101.50%;
+    height: auto;
+}
+.rolling-text-container {
+    width: 100%;
+    height: auto;
+    background-color: #777777b5;
+    color: 000;
 }
 #search-form {
     display: flex;

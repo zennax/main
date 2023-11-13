@@ -81,6 +81,18 @@ a:visited {
 a {
     color: #ffffff;
 }
+footer {
+    background-color: #777777b5;
+    margin: -10px;
+    width: 101.50%;
+    height: auto;
+}
+.rolling-text-container {
+    width: 100%;
+    height: auto;
+    background-color: #777777b5;
+    color: 000;
+}
 .juicewrld {
     cursor: pointer;
 }
@@ -141,6 +153,19 @@ audio::-webkit-media-controls-time-remaining-display{
 }
 #audioSelect {
     border: 2px solid #000;
-    background-color: #7b7b7b;
+    background-color: #7b7b7ba8;
+    color: #fff;
+}
+.audio1 {
+    display: flex;
+    flex-direction: column;
+}
+.audio2 {
+    display: flex;
+    flex-direction: column;
+}
+#audioSelect2 {
+    border: 2px solid #000;
+    background-color: #7b7b7ba8;
     color: #fff;
 }
