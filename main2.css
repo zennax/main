@@ -157,11 +157,11 @@ audio::-webkit-media-controls-time-remaining-display{
     color: #fff;
 }
 .audio1 {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .audio2 {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 #audioSelect2 {

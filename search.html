@@ -11,20 +11,53 @@
     <link rel="stylesheet" href="bg.css">
     <title>Search</title>
 </head>
-
 <body>
     <div class="nav">
-        <nav style="border: #000 solid 2px;">
-            <a href="index.html" onlcick="console.log('Navigating to Home')">Home</a>
-            <a href="search.html" onlcick="console.log('Navigating to Search')">Search</a>
-            <a href="featured.html" onlcick="console.log('Navigating to Featured')">Featured</a>
-            <a href="downloads.html" onlcick="console.log('Navigating to Download')">Download</a>
-            <a href="about.html" onlcick="console.log('Navigating to About')">About</a>
+        <nav style="border: #000 solid 2px; width: 100%; height: auto; padding: 10px;">
+            <details class="nav-details"><summary style="margin: 15px;">
+                <a style="margin: 5px;" href="index.html" onlcick="console.log('Navigating to Home');">Home</a></summary>
+                    <a href="" style="color: #fff; display: flex;">HTML</a>
+                    <a href="" style="color: #fff; display: flex;">CSS</a>
+                    <a href="" style="color: #fff; display: flex;">Javascript</a>
+
+            </details>
+            <details class="nav-details"><summary style="margin: 15px;">
+                <a style="margin: 5px;" href="search.html" onlcick="console.log('Navigating to Search');">Search</a></summary>
+                <a href="" style="color: #fff; display: flex;">YouTube</a>
+
+            </details>
+            <details class="nav-details"><summary style="margin: 15px;">
+                <a style="margin: 5px;" href="featured.html" onlcick="console.log('Navigating to Featured');">Featured</a></summary>
+                <a href="" style="color: #fff; display: flex;">Juice Wrld</a>
+
+            </details>
+            <details class="nav-details"><summary style="margin: 15px;">
+                <a style="margin: 5px;" href="downloads.html" onlcick="console.log('Navigating to Download');">Download</a></summary>
+                <a href="" style="color: #fff; display: flex;">Project T7</a>
+            
+                <a href="" style="color: #fff; display: flex;">Project T6</a>
+
+                <a href="" style="color: #fff; display: flex;">Juice Wlrd</a>
+
+                <a href="" style="color: #fff; display: flex;">XXXTENTACION</a>
+
+                <a href="" style="color: #fff; display: flex;">Lil Skies</a>
+
+                <a href="" style="color: #fff; display: flex;">Ski Mask</a>
+
+            </details>
+            <details class="nav-details"><summary style="margin: 15px;">
+                <a href="" style="margin: 5px;" href="about.html" onlcick="console.log('Navigating to About');">About</a></summary>
+                <a href="" style="color: #fff; display: flex;">Terms</a>
+                <a href="" style="color: #fff; display: flex;">Privacy Policy</a>
+
+            </details>
         </nav>
         <div class="rolling-text-container">
             <p class="rolling-text"><strong>This site is only to be used responsibly, any misuse may have consquences. We are <u>NOT</u> liable for your actions.</strong></p>
         </div>
     </div>
+    <div class="wave"></div> <!--WAVE ENDING-->
         <h1 style="border: #000 solid 2px; text-align:center;">YouTube Search</h1>
     <form id="search-form">
         <input style="background-color: #7b7b7b; color: #fff;" type="text" id="query" placeholder="Search..." value="" onclick="console.log('Searching...');">
