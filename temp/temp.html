@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Audio Player</title>
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <div class="audio-player">
+        <audio id="audio" src="" controls></audio>
+        <div class="controls">
+            <button id="playPauseBtn">&#9658;</button>
+            <input type="range" id="progress" value="0">
+            <input type="range" id="volume" value="100">
+        </div>
+        <div class="playlist">
+            <ul id="playlist">
+                <li data-src="c:\Users\ryanc\Downloads\Juice WRLD - Stone Cold (unreleased).mp3">Song 1</li>
+                <li data-src="song2.mp3">Song 2</li>
+                <!-- Add more songs as needed -->
+            </ul>
+        </div>
+    </div>
+    <script src="temp.js"></script>
+</body>
+</html>
