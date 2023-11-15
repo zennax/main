@@ -1,18 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
 }
 
 .audio-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     max-width: 400px;
-    background-color: #fff;
+    background-color: #ffffff92;
     padding: 20px;
+    margin: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -32,11 +33,14 @@ body {
     cursor: pointer;
     list-style: none;
     margin-bottom: 5px;
+    width: 40%;
     padding: 5px;
-    background-color: #eee;
     border-radius: 4px;
 }
 
 #playlist li:hover {
     background-color: #ddd;
+}
+#playlist li.highlight {
+    background-color: #41414175;
 }

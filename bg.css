@@ -1,4 +1,5 @@
 body {
+    scroll-behavior: smooth;
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;

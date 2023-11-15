@@ -8,19 +8,20 @@
 </head>
 <body>
     <div class="audio-player">
-        <audio id="audio" src="" controls></audio>
+        <audio id="audio" src="" controls hidden></audio>
+        <div id="currentSongTitle"></div>
         <div class="controls">
             <button id="playPauseBtn">&#9658;</button>
             <input type="range" id="progress" value="0">
-            <input type="range" id="volume" value="100">
+            <input type="range" id="volume" value="50" max="110">
         </div>
-        <div class="playlist">
-            <ul id="playlist">
-                <li data-src="c:\Users\ryanc\Downloads\Juice WRLD - Stone Cold (unreleased).mp3">Song 1</li>
-                <li data-src="song2.mp3">Song 2</li>
-                <!-- Add more songs as needed -->
-            </ul>
-        </div>
+    </div>
+    <div class="playlist">
+        <ul id="playlist">
+            <li data-src="c:\Users\ryanc\Downloads\Juice WRLD - Stone Cold (unreleased).mp3">Stone Cold</li>
+            <li data-src="song2.mp3">Song 2</li>
+            <!-- Add more songs as needed -->
+        </ul>
     </div>
     <script src="temp.js"></script>
 </body>

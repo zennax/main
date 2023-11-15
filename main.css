@@ -49,6 +49,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
+    scroll-behavior: smooth;
     background-size: cover;
     max-width: 100%;
     display: flex;
